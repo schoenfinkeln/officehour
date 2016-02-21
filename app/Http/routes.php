@@ -11,9 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'indexController@index');
+Route::resource('officehour', 'OfficehourController');
 
 /*
 |--------------------------------------------------------------------------
